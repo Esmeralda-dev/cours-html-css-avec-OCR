@@ -2,70 +2,115 @@
   margin: 0;
 }
 
-header,
-footer {
-  padding: 100px 50px 20px 50px;
-  background-color: white;
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1em;
+  background-color: #1f2039;
 }
-
+nav {
+  display: flex;
+}
 a {
   color: #242424;
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
-.important {
+
+em {
   color: #a5b4fc;
+  font-style: normal;
 }
+
 h1 {
   font-size: 3.5em;
   color: #a5b4fc;
   font-family: "Montserrat", sans-serif;
 }
+
 h2 {
   color: #f9f8ff;
-  margin: 50px 0 50px 0;
 }
+
 p,
 li {
   font-size: 1.1em;
   color: #f9f8ff;
-}
-nav {
-  background-color: white;
-}
-footer {
-  background-color: white;
+  margin: 40px;
 }
 
-body {
-  background-color: #1f2039;
-  font-family: Manrope;
-  font-size: 1em;
+header,
+footer {
+  background-color: white;
+  padding: 20px 50px;
 }
+
 .cta {
   background: linear-gradient(#8e86b5, #acaeed);
-  font-family: Manrope;
   color: white;
   border-radius: 50px;
+  padding: 20px 30px;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .cta:hover {
-  background: linear-gradient(#696484), #8788ba;
+  background: linear-gradient(#696484, #8788ba);
   text-decoration: none;
 }
 
-.bordure {
-  border-right: 1px #8e86b5 solid;
-  border-bottom: 1px #8e86b5 solid;
-  padding: 50px;
-}
 .lien-icone:hover {
   opacity: 0.5;
 }
 
-.contenu {
+.carre-contenu {
+  border-right: 1px solid #8e86b5;
+  border-bottom: 1px solid #8e86b5;
+  padding: 50px;
+}
+
+.carre-contenu h2 {
+  margin-top: 30px;
+}
+
+.carre-contenu ul {
+  margin-top: 30px;
+}
+
+section {
   padding: 80px;
-  text-align: justify;
+}
+
+.a-propos-main {
+  width: 50%;
+  margin: auto;
+}
+footer,
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  margin-left: 10px;
+}
+
+.page-accueil {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+}
+.projet div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.projet h2 {
+  text-align: center;
+  margin-bottom: 60px;
 }
